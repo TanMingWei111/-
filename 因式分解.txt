@@ -1,0 +1,33 @@
+/*
+7、功能：对任一整数N(N≠0),它都可以分解成1(或-1)和一些质数(素
+      数)因子的形式。
+例如：当N=150时，可分解成1×2×3×5×5；     
+      下边程序能实现这种分解过程。当N=150，输出以下分解结
+      果：N=  1*  2*   3*   5*   5
+*/
+/*
+#include <stdio.h>
+void fenjie(int);
+
+void main()
+{
+	int n;
+	scanf("%d",&n);
+	fenjie(n);
+}
+void fenjie(int n)
+{
+	int j;
+	printf("N=1*");
+	for(j=2;j<=n;)
+	{
+		if(n%j==0)
+		{
+			n=n/j;
+			printf("%d*",j);
+		}
+		else j++;
+	}
+	printf("\b \n");
+}
+*/
